@@ -10,8 +10,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                // Invoke Maven to clean the project and package it
-                sh 'mvn clean package'
+                // Invoke Maven to clean the project
+                sh 'mvn clean'
             }
         }
     }
