@@ -61,7 +61,7 @@ pipeline {
         stage('Approval to Deploy - Production') {
             steps {
                 echo 'Seeking approval'
-                echo 'Sending notification to team lead'
+                echo 'Sending notification for approval'
                 script {
                     if (env.DEPLOY_ENV != 'staging') {
                         slackSend (
