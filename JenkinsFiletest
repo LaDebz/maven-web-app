@@ -1,16 +1,17 @@
 pipeline {
     agent any
     
+    // Define Maven tool with the name 'Maven'
+    // and version 3.9.4
     tools {
-        // Define Maven tool with the name 'Maven3.9.4'
-        maven 'Maven3.9.4'
+        maven 'maven3.9.4'
     }
     
     stages {
         stage('Build') {
             steps {
-                // Invoke Maven to clean the project
-                sh 'mvn clean'
+                // Invoke Maven to clean the project and package it
+                sh 'mvn clean package'
             }
         }
     }
