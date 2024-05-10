@@ -1,3 +1,3 @@
 # Deploy to tomcat
 FROM tomcat:8.0.20-jre8 as deploy
-EXPOSE 8056
+EXPOSE 8055
