@@ -1,5 +1,5 @@
-Docker file:
-Individual docker file created for each base image (Sonaqube, Nexus, Tomcat) e.g
+#Docker file:
+#Individual docker file created for each base image (Sonaqube, Nexus, Tomcat) e.g
 # Deploy to Nexus
 FROM sonatype/nexus3:3.67.1-java11 as nexus
 # Deploy to tomcat
