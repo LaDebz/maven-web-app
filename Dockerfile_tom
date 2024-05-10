@@ -1,1 +1,5 @@
-
+# Deploy to tomcat
+FROM tomcat:8.0.20-jre8 as deploy
+RUN mv /usr/local/tomcat/webapps /usr/local/tomcat/webapps2
+RUN mv /usr/local/tomcat/webapps.dist /usr/local/tomcat/webapps
+EXPOSE 8055
