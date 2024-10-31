@@ -25,7 +25,7 @@ public String uploadImage(HttpServletRequest request, HttpServletResponse respon
 		js.put("Name", "Acada Learning");
 		js.put("Calling Name", "Acada");
 		js.put("DOB", "May 1, 2005");
-		js.put("Hobbies", "Praying, Singing, Reading Technical Blogs,Teaching, Helping to Poor People..");
+		js.put("Hobbies", "Praying, Singing, Reading Technical Blogs,Teaching, Helping the Poor People..");
 		js.put("Places he like", "Africa, NA, Bali");
 		return js.toString();
 }
